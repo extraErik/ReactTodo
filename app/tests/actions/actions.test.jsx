@@ -43,9 +43,9 @@ describe('Actions', () => {
             });
             expect(actions[0].todo).toInclude({
                 text: todoText
-            })
+            });
+            done();
         }).catch(done);
-        done();
     });
 
     it('should generate add todos action object', () => {
