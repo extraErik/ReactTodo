@@ -2,11 +2,10 @@ import firebase from 'firebase';
 
 try {
     var config = {
-        apiKey: "AIzaSyB16W2jVljSnip97AXESu7yURylV_iwDVA",
-        authDomain: "rygg-todo-app.firebaseapp.com",
-        databaseURL: "https://rygg-todo-app.firebaseio.com",
-        storageBucket: "rygg-todo-app.appspot.com",
-        messagingSenderId: "431685693263"
+        apiKey: process.env.API_KEY,
+        authDomain: process.env.AUTH_DOMAIN,
+        databaseURL: process.env.DATABASE_URL,
+        storageBucket: process.env.STORAGE_BUCKET,
      };
 
      firebase.initializeApp(config);
